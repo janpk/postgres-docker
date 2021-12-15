@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  db:
+    image: "quarkus-postgres-image"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=testdb
